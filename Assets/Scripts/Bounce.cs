@@ -21,7 +21,7 @@ public class Bounce : MonoBehaviour
         if (rb != null)
         {
            // AddForce zorgt ervoor dat de speler omhoog de lucht schiet.
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpForce);
         }
     }
 }
