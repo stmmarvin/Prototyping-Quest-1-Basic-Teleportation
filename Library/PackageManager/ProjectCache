@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638821248282152500
-    m_Hash: 1091399077
+      ticks: 638821276076213294
+    m_Hash: 1911159452
   m_LockFileStatus:
     m_FilePath: C:/Create with Code/Protyp Quest 1/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638821248282206663
-    m_Hash: 1919471843
+      ticks: 638821276076213294
+    m_Hash: 292741567
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
