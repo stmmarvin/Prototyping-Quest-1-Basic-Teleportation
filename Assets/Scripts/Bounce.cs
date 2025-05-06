@@ -11,11 +11,17 @@ public class Bounce : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        // Challenge 1: JumpyJumpy(other);
+        JumpyJumpy(other);
     }
 
     void JumpyJumpy(Collider other)
     {
-
+        Rigidbody rb = other.GetComponent<Rigidbody>();
+        // checkt of de speler een Rigidbody heeft.
+        if (rb != null)
+        {
+           // AddForce zorgt ervoor dat de speler omhoog de lucht schiet.
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
     }
 }
