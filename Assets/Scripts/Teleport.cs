@@ -23,8 +23,9 @@ public class Teleport : MonoBehaviour
         if (other.gameObject == player)
         {
             TeleportPlayer();
+            DeactivateObject();
         }
-        // Challenge 3: DeactivateObject();
+        
         // Challenge 4: IlluminateArea();
         // Challenge 5: StartCoroutine ("BlinkWorldLight");
         // Challenge 6: TeleportPlayerRandom();
@@ -35,9 +36,10 @@ public class Teleport : MonoBehaviour
         player.transform.position = teleportTarget.position;
     }
 
+    // teleport niet nog een keer
     void DeactivateObject()
     {
-       // code goes here 
+        GetComponent<Collider>().enabled = false;
     }
 
     void IlluminateArea()
