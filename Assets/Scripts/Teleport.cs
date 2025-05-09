@@ -24,9 +24,9 @@ public class Teleport : MonoBehaviour
         {
             TeleportPlayer();
             DeactivateObject();
+            IlluminateArea();
         }
         
-        // Challenge 4: IlluminateArea();
         // Challenge 5: StartCoroutine ("BlinkWorldLight");
         // Challenge 6: TeleportPlayerRandom();
     }
@@ -44,9 +44,21 @@ public class Teleport : MonoBehaviour
 
     void IlluminateArea()
     {
-       // code goes here 
+        if (areaLight != null)
+        {
+            areaLight.enabled = true; // Zet de lamp aan
+            StartCoroutine(DisableLightAfterDelay(5f)); // Zet de lamp na 5 seconden weer uit
+        }
     }
 
+    IEnumerator DisableLightAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (areaLight != null)
+        {
+            areaLight.enabled = false; // Zet de lamp uit
+        }
+    }
     // IEnumerator BlinkWorldLight()
     // {
             // code goes here
