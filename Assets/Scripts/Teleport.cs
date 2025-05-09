@@ -12,10 +12,20 @@ public class Teleport : MonoBehaviour
     [SerializeField] Light areaLight;
     [SerializeField] Light mainWorldLight;
 
+    [SerializeField] List<Transform> teleportPlatforms; // Voeg een lijst van platforms toe
+
+   
     void Start() 
     {
-        // CHALLENGE TIP: Make sure all relevant lights are turned off until you need them on
-        // because, you know, that would look cool.
+        if (mainWorldLight != null)
+        {
+            mainWorldLight.enabled = false; // Zet de lamp uit
+        }
+
+        if (areaLight != null)
+        {
+            areaLight.enabled = false; // Zet de lamp uit
+        }
     }
 
     void OnTriggerEnter(Collider other) 
@@ -26,8 +36,9 @@ public class Teleport : MonoBehaviour
             DeactivateObject();
             IlluminateArea();
             StartCoroutine (BlinkWorldLight());
+            TeleportPlayerRandom();
         }
-        // Challenge 6: TeleportPlayerRandom();
+        
     }
 
     void TeleportPlayer()
@@ -76,7 +87,21 @@ public class Teleport : MonoBehaviour
 
     void TeleportPlayerRandom()
     {
-        // code goes here... or you could modify one of your other methods to do the job.
+        if (teleportPlatforms != null && teleportPlatforms.Count > 0)
+        {
+            // Kies een willekeurig platform uit de lijst
+            int randomIndex = Random.Range(0, teleportPlatforms.Count);
+            Transform randomPlatform = teleportPlatforms[randomIndex];
+
+            // Teleporteer de speler naar het gekozen platform
+            player.transform.position = randomPlatform.position;
+        }
+        else
+        {
+            Debug.LogWarning("De lijst met teleportPlatforms is leeg of niet ingesteld!");
+        }
     }
+
+
 
 }
