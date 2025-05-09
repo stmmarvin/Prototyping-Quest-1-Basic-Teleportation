@@ -25,9 +25,8 @@ public class Teleport : MonoBehaviour
             TeleportPlayer();
             DeactivateObject();
             IlluminateArea();
+            StartCoroutine (BlinkWorldLight());
         }
-        
-        // Challenge 5: StartCoroutine ("BlinkWorldLight");
         // Challenge 6: TeleportPlayerRandom();
     }
 
@@ -59,10 +58,21 @@ public class Teleport : MonoBehaviour
             areaLight.enabled = false; // Zet de lamp uit
         }
     }
-    // IEnumerator BlinkWorldLight()
-    // {
-            // code goes here
-    // }
+    IEnumerator BlinkWorldLight()
+    {
+        if (mainWorldLight != null)
+        {
+            Debug.Log("BlinkWorldLight started");
+            mainWorldLight.enabled = true; // Zet de lamp aan
+            yield return new WaitForSeconds(2f); // Wacht 2 seconden
+            mainWorldLight.enabled = false; // Zet de lamp uit
+            Debug.Log("BlinkWorldLight finished");
+        }
+        else
+        {
+            Debug.LogWarning("mainWorldLight is not assigned!");
+        }
+    }
 
     void TeleportPlayerRandom()
     {
