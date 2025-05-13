@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Create with Code\\Protyp Quest 1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|c:\\create with code\\protyp quest 1\\assets\\scripts\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\teleport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|c:\\create with code\\protyp quest 1\\assets\\scripts\\first person controller\\groundcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\first person controller\\groundcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|c:\\create with code\\protyp quest 1\\assets\\scripts\\first person controller\\firstpersonmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\first person controller\\firstpersonmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|c:\\create with code\\protyp quest 1\\assets\\scripts\\first person controller\\firstpersonlook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\first person controller\\firstpersonlook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|c:\\create with code\\protyp quest 1\\assets\\scripts\\bounce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D381FAC0-19AB-E80E-ED5E-5971CF5F6EA9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bounce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Teleport.cs",
+              "DocumentMoniker": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\Teleport.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Teleport.cs",
+              "ToolTip": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\Teleport.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Teleport.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:38:36.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GroundCheck.cs",
+              "DocumentMoniker": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\First person controller\\GroundCheck.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\First person controller\\GroundCheck.cs",
+              "ToolTip": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\First person controller\\GroundCheck.cs",
+              "RelativeToolTip": "Assets\\Scripts\\First person controller\\GroundCheck.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:38:26.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FirstPersonMovement.cs",
+              "DocumentMoniker": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\First person controller\\FirstPersonMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\First person controller\\FirstPersonMovement.cs",
+              "ToolTip": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\First person controller\\FirstPersonMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\First person controller\\FirstPersonMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:38:25.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FirstPersonLook.cs",
+              "DocumentMoniker": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\First person controller\\FirstPersonLook.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\First person controller\\FirstPersonLook.cs",
+              "ToolTip": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\First person controller\\FirstPersonLook.cs",
+              "RelativeToolTip": "Assets\\Scripts\\First person controller\\FirstPersonLook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:38:22.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Bounce.cs",
+              "DocumentMoniker": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\Bounce.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bounce.cs",
+              "ToolTip": "C:\\Create with Code\\Protyp Quest 1\\Assets\\Scripts\\Bounce.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bounce.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:31:16.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

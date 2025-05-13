@@ -12,44 +12,96 @@ public class Teleport : MonoBehaviour
     [SerializeField] Light areaLight;
     [SerializeField] Light mainWorldLight;
 
+    [SerializeField] List<Transform> teleportPlatforms; // Voeg een lijst van platforms toe
+
+   
     void Start() 
     {
-        // CHALLENGE TIP: Make sure all relevant lights are turned off until you need them on
-        // because, you know, that would look cool.
+        if (mainWorldLight != null)
+        {
+            mainWorldLight.enabled = false; // Zet de lamp uit
+        }
+
+        if (areaLight != null)
+        {
+            areaLight.enabled = false; // Zet de lamp uit
+        }
     }
 
     void OnTriggerEnter(Collider other) 
     {
-        // Challenge 2: TeleportPlayer();
-        // Challenge 3: DeactivateObject();
-        // Challenge 4: IlluminateArea();
-        // Challenge 5: StartCoroutine ("BlinkWorldLight");
-        // Challenge 6: TeleportPlayerRandom();
+        if (other.gameObject == player)
+        {
+            TeleportPlayer();
+            DeactivateObject();
+            IlluminateArea();
+            StartCoroutine (BlinkWorldLight());
+            TeleportPlayerRandom();
+        }
+        
     }
 
     void TeleportPlayer()
     {
-        // code goes here
+        player.transform.position = teleportTarget.position;
     }
 
+    // teleport niet nog een keer
     void DeactivateObject()
     {
-       // code goes here 
+        GetComponent<Collider>().enabled = false;
     }
 
     void IlluminateArea()
     {
-       // code goes here 
+        if (areaLight != null)
+        {
+            areaLight.enabled = true; // Zet de lamp aan
+            StartCoroutine(DisableLightAfterDelay(5f)); // Zet de lamp na 5 seconden weer uit
+        }
     }
 
-    // IEnumerator BlinkWorldLight()
-    // {
-            // code goes here
-    // }
+    IEnumerator DisableLightAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (areaLight != null)
+        {
+            areaLight.enabled = false; // Zet de lamp uit
+        }
+    }
+    IEnumerator BlinkWorldLight()
+    {
+        if (mainWorldLight != null)
+        {
+            Debug.Log("BlinkWorldLight started");
+            mainWorldLight.enabled = true; // Zet de lamp aan
+            yield return new WaitForSeconds(2f); // Wacht 2 seconden
+            mainWorldLight.enabled = false; // Zet de lamp uit
+            Debug.Log("BlinkWorldLight finished");
+        }
+        else
+        {
+            Debug.LogWarning("mainWorldLight is not assigned!");
+        }
+    }
 
     void TeleportPlayerRandom()
     {
-        // code goes here... or you could modify one of your other methods to do the job.
+        if (teleportPlatforms != null && teleportPlatforms.Count > 0)
+        {
+            // Kies een willekeurig platform uit de lijst
+            int randomIndex = Random.Range(0, teleportPlatforms.Count);
+            Transform randomPlatform = teleportPlatforms[randomIndex];
+
+            // Teleporteer de speler naar het gekozen platform
+            player.transform.position = randomPlatform.position;
+        }
+        else
+        {
+            Debug.LogWarning("De lijst met teleportPlatforms is leeg of niet ingesteld!");
+        }
     }
+
+
 
 }
